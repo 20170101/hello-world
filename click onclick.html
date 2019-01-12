@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>demo</title>
+    <script src="http://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="demo">
+        <button id="btn1" onclick="change()">btn one</button>
+        <button id="btn2">btn two</button>
+    </div>
+</body>
+<script type="text/javascript">
+    $(function () {
+        $("#btn2").click(function () {
+            $("#btn1").click();
+        });
+    });
+    function change() {
+        alert("onclick");
+    }
+</script>
+</html>

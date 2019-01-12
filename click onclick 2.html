@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>demo</title>
+		<script src="http://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div id="demo">	
+			<button id="btn-one" onclick="alertBtnOneOnclick()">btn one</button>		
+			<button>btn two</button>		
+			<button id="btn-three">btn three</button>		
+			<button onclick="alertBtnFourOnclick()">btn four</button>		
+		</div>
+	</body>
+	<script>
+		<!-- $(function(){ -->
+			<!-- $('#btn-id').click(function(){alert('click btn')}); -->
+		<!-- }); -->
+		$('#btn-one').click(function(){alert('click btn one')});
+		$('#btn-three').click(function(){alert('click btn three')});
+		function alertBtnOneOnclick(){
+			alert('triger btn one onclick');
+		};
+		function alertBtnFourOnclick(){
+			alert('triger btn four onclick');
+		}
+	</script>
+</html>
